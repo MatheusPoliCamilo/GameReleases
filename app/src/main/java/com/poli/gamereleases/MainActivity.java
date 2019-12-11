@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
         listGame = new ArrayList<>();
         recyclerView = findViewById(R.id.rvGamesList);
-        jsonrequest();
+        jsonRequest();
     }
 
-    private void jsonrequest() {
+    private void jsonRequest() {
 
         String JSON_URL = "https://api.crackwatch.com/api/games?page=0&sort_by=release_date&is_released=true";
         JsonArrayRequest request = new JsonArrayRequest(JSON_URL, new Response.Listener<JSONArray>() {
